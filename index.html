@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroInnovaTech | Instalación de Redes e Infraestructura TI en Maracaibo</title>
+    <meta name="description"
+        content="Especialistas en diseño e instalación de redes profesionales en Maracaibo. Soluciones de conectividad de élite, cableado estructurado y soporte senior 24/7 en Zulia.">
+    <meta name="keywords"
+        content="instalación de redes Maracaibo, soporte técnico TI Maracaibo, redes wifi Maracaibo, cableado estructurado Zulia, ingeniería de redes Venezuela">
+
+    <!-- Open Graph / Social SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astroinnovatech.com/">
+    <meta property="og:title" content="AstroInnovaTech | Redes e Infraestructura de Élite en Maracaibo">
+    <meta property="og:description"
+        content="Transformamos tu infraestructura tecnológica. Ingeniería de redes profesional en Maracaibo, Zulia.">
+    <meta property="og:image" content="/assets/logo.png">
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AstroInnovaTech CA",
+      "image": "https://astroinnovatech.com/assets/logo.png",
+      "@id": "https://astroinnovatech.com",
+      "url": "https://astroinnovatech.com",
+      "telephone": "+584246073831",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Palacio de Eventos, Local M25-A",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "postalCode": "4001",
+        "addressCountry": "VE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.6447,
+        "longitude": -71.6175
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/astroinnovatech"
+      ]
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: '#16FF1F',
+                        petrol: '#092E2B',
+                        cream: '#F7F9E9',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        tech: ['Orbitron', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #F7F9E9;
+            color: #092E2B;
+        }
+
+        .glass-nav {
+            background: rgba(247, 249, 233, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(9, 46, 43, 0.05);
+        }
+
+        .text-neon-glow {
+            color: #16FF1F;
+            text-shadow: 0 0 10px rgba(22, 255, 31, 0.3);
+        }
+
+        .btn-tech {
+            background-color: #092E2B;
+            color: #F7F9E9;
+            border: 1px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-tech:hover {
+            border-color: #16FF1F;
+            box-shadow: 0 0 15px rgba(22, 255, 31, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .btn-neon-outline {
+            background: transparent;
+            color: #092E2B;
+            border: 2px solid #16FF1F;
+            transition: all 0.3s ease;
+        }
+
+        .btn-neon-outline:hover {
+            background: #16FF1F;
+            color: #092E2B;
+        }
+
+        /* Animaciones Premium Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .delay-100 {
+            transition-delay: 100ms;
+        }
+
+        .delay-200 {
+            transition-delay: 200ms;
+        }
+
+        .delay-300 {
+            transition-delay: 300ms;
+        }
+
+        .delay-400 {
+            transition-delay: 400ms;
+        }
+
+        .delay-500 {
+            transition-delay: 500ms;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            const observeElements = () => {
+                document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+                    observer.observe(el);
+                });
+            };
+
+            observeElements();
+
+            // Re-observar si el contenido cambia (para SPAs)
+            const mutationObserver = new MutationObserver(observeElements);
+            mutationObserver.observe(document.body, { childList: true, subtree: true });
+        });
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
